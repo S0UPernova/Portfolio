@@ -1,0 +1,62 @@
+.cardContainer {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    .card{
+    transition: box-shadow 500ms ease-out;
+    transition: background-color 500ms ease-out;
+    }
+    
+    .card {
+        border: solid black;
+        color: black;
+        padding: 1em;
+        flex-grow: 1;
+        width: 15em;
+        max-width: 30em;
+        &:hover {
+            box-shadow: 2px 2px 8px $box-shadow-color, -0.3em .2em .8em $box-shadow-color;
+            background-color:rgb(187, 187, 187);
+            }
+        .projectName {
+            text-align: center;
+
+        }
+        .projectName{
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        .hosted {
+            background-color: #534292;
+            color: white;
+            display: flex;
+            justify-content: center;
+
+        }
+        .github {
+            background-color: rgb(36, 41, 46);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-content: space-around;
+        }
+        .btn {
+            padding: 1em;
+            margin: 0.5em 0.1em;
+            font-size: 1.4rem;
+            text-decoration: none;
+            text-align: center;
+
+            &:hover {
+                box-shadow: 1px 1px $box-shadow-color, -0.1em 0 .1em $box-shadow-color;
+                transition: all 0.2s ease-in-out;
+                }
+        }
+        button {
+            cursor: pointer;
+        }
+        
+    }
+}

@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import './stylesheets/main.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import MainContent from "./components/MainContent"
+class App extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            page: "about"
+        }
+        this.handleClick = this.handleClick.bind(this)
+    }
+    
+    handleClick(event) {
+        this.setState({
+            [event.target.name]: [event.target.value]
+            
+        })
+      }
+    render() {
+        return (
+            <>
+                {/* changes this state base on which button you click */}
+                <Header handleClick={this.handleClick} page={this.state.page} />
+                
+                {/* displays the page corresponding to that button */}
+                <MainContent page={this.state.page} />
+                <Footer />
+            </>
+        )
+    }
 }
-
-export default App;
+export default App
