@@ -5,13 +5,13 @@ import Contact from "./pages/contact/Contact.js"
 class MainContent extends React.Component {
     render() {
         // using app state to set the current page
-        const page = this.props.page
+        const page = this.props.page.toString()
         return (
-            <div class="container" >
-                {page == "about" && <About />}
-                {page == "projects" && <ProjectsPage />}
-                {page == "contact" && <Contact />}
-            </div >
+            <>
+                {page === "about" && <About />}
+                {page === "projects" && <ProjectsPage />}
+                {page === "contact" && <Contact />}
+            </>
         )
 
     }

@@ -21,14 +21,14 @@ class App extends React.Component {
       }
     render() {
         return (
-            <>
+            <div className='container'>
                 {/* changes this state base on which button you click */}
                 <Header handleClick={this.handleClick} page={this.state.page} />
                 
                 {/* displays the page corresponding to that button */}
-                <MainContent page={this.state.page} />
+                    <MainContent page={this.state.page} />
                 <Footer />
-            </>
+            </div>
         )
     }
 }

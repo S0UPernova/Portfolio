@@ -1,18 +1,25 @@
-.scocials {
-    background-color: teal;
-    margin-top: 5rem;
-    height: 10em;
+
+footer{
+    position: absolute;
+    border-top: 0.1rem solid black;
+    box-sizing: border-box;
+    bottom: 0;
+    background-color: #666;
+    left: 0;
     width: 100%;
-    
-    display: flex;
-    align-items: center;
-    ul{
-        
-        margin: 0;
-        list-style: none;
-        display:flex;
-        gap: 1em;
-        
-        
+    .scocials {
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul{
+            
+            margin: 0;
+            list-style: none;
+            display:flex;
+            gap: 1em;
+            
+            
+        }
     }
 }

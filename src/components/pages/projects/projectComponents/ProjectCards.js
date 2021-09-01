@@ -1,5 +1,6 @@
 import React from "react"
 import projectData from "./projectData.json"
+import { motion } from 'framer-motion'
 class ProjectCards extends React.Component {
     constructor(props) {
         super(props)
@@ -14,6 +15,7 @@ class ProjectCards extends React.Component {
         })
     }
     render() {
+        let motionTransition = {type: "spring", stiffness: 75}
         // creating a variable to make if statements a bit simpler
         const searchTag = this.state.searchTag.toLowerCase()
         return (
@@ -23,38 +25,69 @@ class ProjectCards extends React.Component {
 
                 {/* filters array to what matches searchTag in props */}
                 {projectData.filter((project) => {
-                    if (searchTag == "") {
+                    if (searchTag === "") {
                         return project
                     }
-                    if (project.name && project.name.toLowerCase().includes(searchTag)) {
-                        return project
+                    // filters project array with searchbar input to update displayed projects
+                    if (searchTag !== '') {
+                        let projectContainsKeyword = true
+                        searchTag.split(' ').forEach(word => {
+                            if (project.name && project.name.toLowerCase().includes(word)) return
+                            else if (project.description && project.description.toLowerCase().includes(word)) return 
+                            else if (project.techStack && project.techStack.toString().toLowerCase().includes(word)) return
+                            else projectContainsKeyword = false
+                        })
+                        if (projectContainsKeyword === true){
+                            return project
+                        }
                     }
-                    if (project.description && project.description.toLowerCase().includes(searchTag)) {
-                        return project
-                    }
-                    if (project.techStack && project.techStack.toString().toLowerCase().includes(searchTag)) {
-                        return project
-                    }
-                }   
-                )
+                    return false
+                })
                 // maps each object in the filtered project array to make project cards with conditional rendering for all fields
                 .map((project, index) => (
-                        <div key={index} className="card">
-                            {project.name && <h2 className="projectName">{project.name}</h2>}
-                            {project.description && <p className="projectDesc">{project.description}</p>}
-                            {project.techStack && project.techStack.map((project, index) => <button
+                        <motion.div key={index} 
+                            layout 
+                            transition={motionTransition} 
+                            className="card">
+
+                            {project.name && <motion.h2 
+                                layout 
+                                transition={motionTransition} 
+                                className="projectName">{project.name}
+                                </motion.h2>}
+                            {project.description && <motion.p 
+                                layout 
+                                transition={motionTransition} 
+                                className="projectDesc">{project.description}
+                                </motion.p>}
+                            {project.techStack && project.techStack.map((project, index) => <motion.button
                                 key={index} 
                                 onClick={this.handleChange} 
                                 name="searchTag"
-                                value={project} 
-                                >{project}</button>)}
-                            {project.hostedLink && <a className="hosted btn" href={project.hostedLink} rel="noreferrer" target="_blank">Hosted link</a>}
-                            {project.githubLink && <a className="github btn" href={project.githubLink} rel="noreferrer" target="_blank">Github</a>}
-                            
-                        </div>
+                                value={project}
+                                layout
+                                transition={motionTransition}
+                                >{project}</motion.button>)}
+                            {project.hostedLink && <motion.a 
+                                layout 
+                                transition={motionTransition}
+                                className="hosted btn" 
+                                href={project.hostedLink} 
+                                rel="noreferrer" 
+                                target="_blank">Hosted link
+                                </motion.a>}
+                            {project.githubLink && <motion.a 
+                                layout
+                                transition={motionTransition}
+                                className="github btn" 
+                                href={project.githubLink} 
+                                rel="noreferrer" 
+                                target="_blank">Github
+                            </motion.a>}
+                        </motion.div>
                 ))}
             </section>
         )
     }
 }
-export default ProjectCards
+export default ProjectCardsc

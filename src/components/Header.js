@@ -3,7 +3,7 @@ class Header extends React.Component {
     
     
     render() {
-        const page = this.props.page
+        const page = this.props.page.toString()
         return (
             <>
 
@@ -28,7 +28,7 @@ class Header extends React.Component {
                                 name="page" 
                                 value="about" 
                                 id="about" 
-                                className={(page == "about" ? "btn underlined" : "btn")}
+                                className={(page === "about" ? "btn underlined" : "btn")}
                                 >About
                             </button>
                         </li>
@@ -38,7 +38,7 @@ class Header extends React.Component {
                                 name="page" 
                                 value="projects" 
                                 id="projects" 
-                                className={(page == "projects" ? "btn underlined" : "btn")}
+                                className={(page === "projects" ? "btn underlined" : "btn")}
                                 >Projects
                             </button>
                         </li>
@@ -48,7 +48,7 @@ class Header extends React.Component {
                                 name="page" 
                                 value="contact" 
                                 id="contact" 
-                                className={(page == "contact" ? "btn underlined" : "btn")}
+                                className={(page === "contact" ? "btn underlined" : "btn")}
                                 >Contact
                             </button>
                         </li>

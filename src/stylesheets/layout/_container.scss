@@ -1,10 +1,12 @@
 body {
     margin: 0;
-    min-height: 100vh;;
     background: linear-gradient(#c0c0c0, #666);
     background-repeat:round;
+    position: relative;
+    padding-bottom: 11rem;
 }
 .container {
+    min-height: 100vh;
     width: 80%;
     margin: auto;
 }

@@ -8,19 +8,17 @@ header {
 nav {
     background-color: transparent;
     font-size: 3rem;
-    
+    .burger {
+        text-decoration: none;
+    }
     ul  {
         list-style-type: none;
         margin: 0;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
             .btn{
                 font-size: 1.5rem;
-                padding: 1rem;
-                min-width: 4em;
-                max-width: 8em;
+                padding: .7rem 0;
                 cursor: pointer;
+                width: 100%;
                 background-color: rgb(223, 223, 223);
                 &:hover {
                     
@@ -32,4 +30,24 @@ nav {
 }
 .underlined {
     text-decoration: underline;
+}
+@media only screen and (min-width: 500px)  {
+    nav {
+        .btn{
+            padding: 1rem;
+            max-width: 8em;
+            font-size: 1.5rem;
+            min-width: 4em;
+        }
+    
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+
+        }
+    }
+}
+.hidden {
+font-size: 5rem;
 }

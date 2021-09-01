@@ -1,6 +1,5 @@
 import React from "react"
 import { GrGithub, GrLinkedin, GrCodepen } from "react-icons/gr";
-import { AiFillCodepenSquare } from "react-icons/ai";
 function Footer() {
     return (
         <footer>
