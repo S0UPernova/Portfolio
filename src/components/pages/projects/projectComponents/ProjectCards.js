@@ -90,4 +90,4 @@ class ProjectCards extends React.Component {
         )
     }
 }
-export default ProjectCardsc
+export default ProjectCards
