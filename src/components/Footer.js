@@ -5,20 +5,20 @@ function Footer() {
         <footer>
             <section className="scocials">
                 <ul>
-                    <li><a className=" btn" href="https://github.com/S0UPernova/" target="_blank"><GrGithub 
+                    <li><a className=" btn" href="https://github.com/S0UPernova/" rel="noreferrer" target="_blank"><GrGithub 
                     style={{
                         color: "white",
                         fontSize: "2rem"
                     }}
                     /></a></li>
-                    <li><a className=" btn" href="https://codepen.io/s0upernova" target="_blank"><GrCodepen
+                    <li><a className=" btn" href="https://codepen.io/s0upernova" rel="noreferrer" target="_blank"><GrCodepen
                     style={{
                         color: "black",
                         fontSize: "2rem"
                     }}
                     /></a></li>
 
-                    <li><a className=" btn" href="https://www.linkedin.com/in/michael-kielpinski-2a7019202/" target="_blank"><GrLinkedin
+                    <li><a className=" btn" href="https://www.linkedin.com/in/michael-kielpinski-2a7019202/" rel="noreferrer" target="_blank"><GrLinkedin
                     style={{
                         color: "steelBlue",
                         backgroundColor: "white",

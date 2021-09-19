@@ -23,12 +23,11 @@ class ProjectCards extends React.Component {
                 {/* search bar updates searchTag state to filter project array */}
                 <input className="searchTags" name="searchTag" type="text" placeholder="Search" value={this.state.searchTag} onChange={this.handleChange}/>
 
-                {/* filters array to what matches searchTag in props */}
+                {/* filters project array with searchbar input to update displayed projects */}
                 {projectData.filter((project) => {
                     if (searchTag === "") {
                         return project
                     }
-                    // filters project array with searchbar input to update displayed projects
                     if (searchTag !== '') {
                         let projectContainsKeyword = true
                         searchTag.split(' ').forEach(word => {
@@ -90,4 +89,4 @@ class ProjectCards extends React.Component {
         )
     }
 }
-export default ProjectCardsc
+export default ProjectCards
