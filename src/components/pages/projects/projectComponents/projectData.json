@@ -1,79 +1,35 @@
 [
     {
         "img": "",
+        "name": "Sample app",
+        "description": "The sample app from The Ruby on Rails Tutorial by Michael Hartl",
+        "hostedLink": "https://obscure-sample-app.herokuapp.com/",
+        "githubLink": "https://github.com/S0UPernova/sample_app",
+        "techStack": ["html", "css", "ruby on rails", "crud", "users"]
+    },
+    {
+        "img": "",
+        "name": "Toy app",
+        "description": "A simple crud app from The Ruby on Rails Tutorial by Michael Hartl",
+        "hostedLink": "https://obscure-toy-app.herokuapp.com/",
+        "githubLink": "https://github.com/S0UPernova/toy_app",
+        "techStack": ["html", "css", "ruby on rails", "simple crud"]
+    },
+    {
+        "img": "",
         "name": "Whatr-Friends?",
         "description": "an app that lets you make a table of friends",
         "hostedLink": "https://whatr-friends.herokuapp.com/",
         "githubLink": "https://github.com/S0UPernova/Whatr_friends",
-        "techStack": ["html", "css", "ruby on rails", "bootstrap"]
+        "techStack": ["html", "css", "ruby on rails", "bootstrap", "crud", "devise"]
         
     },
     {
         "img": "",
         "name": "Double burger",
         "description": "a page describing the best way to consume two burgers",
-        "hostedLink": "",
+        "hostedLink": "https://double-burger.herokuapp.com/",
         "githubLink": "https://github.com/S0UPernova/Double-Burger",
         "techStack": ["html", "css", "ruby on rails"]
-    },
-    {
-        "img": "",
-        "name": "example",
-        "description": "an app that does not exist",
-        "hostedLink": "#",
-        "githubLink": "#",
-        "techStack": ["html", "css", "django"]
-
-    },
-    {
-        "img": "",
-        "name": "noDesc",
-        "hostedLink": "",
-        "githubLink": "https://github.com/S0UPernova/Double-Burger"
-        
-    },
-    {
-        "img": "",
-        "name": "Whatr-Friends?",
-        "description": "an app that lets you make a table of friends",
-        "hostedLink": "https://whatr-friends.herokuapp.com/",
-        "githubLink": "https://github.com/S0UPernova/Whatr_friends",
-        "techStack": ["javascript", "css", "ruby on rails"]
-    },
-    {
-        "img": "",
-        "name": "Double burger",
-        "description": "a page describing the best way to consume two burgers",
-        "hostedLink": "",
-        "githubLink": "https://github.com/S0UPernova/Double-Burger",
-        "techStack": ["html", "css", "ruby on rails", "react"]
-    },
-    {
-        "img": "",
-        "name": "Whatr-Friends?",
-        "description": "an app that lets you make a table of friends",
-        "hostedLink": "https://whatr-friends.herokuapp.com/",
-        "githubLink": "https://github.com/S0UPernova/Whatr_friends",
-        "techStack": ["react", "javascript", "sass", "scss", "ruby on rails"]
-    },
-    {
-        "img": "",
-        "name": "Double burger",
-        "description": "a page describing the best way to consume two burgers",
-        "hostedLink": "",
-        "githubLink": "https://github.com/S0UPernova/Double-Burger"
-    },
-    {
-        "img": "",
-        "description": "noTitle",
-        "hostedLink": "https://whatr-friends.herokuapp.com/",
-        "githubLink": "https://github.com/S0UPernova/Whatr_friends"
-    },
-    {
-        "img": "",
-        "name": "Double burger",
-        "description": "a page describing the best way to consume two burgers",
-        "hostedLink": "",
-        "githubLink": "https://github.com/S0UPernova/Double-Burger"
     }
 ]
