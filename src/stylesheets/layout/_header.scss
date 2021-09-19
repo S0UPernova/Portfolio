@@ -2,7 +2,7 @@ header {
     height: 8rem;
     text-align: center;
     padding: 1rem;
-    color:black;
+    color: $header-color;
     background-color: transparent;
 }
 nav {
@@ -19,11 +19,11 @@ nav {
                 padding: .7rem 0;
                 cursor: pointer;
                 width: 100%;
-                background-color: rgb(223, 223, 223);
+                background-color: $background-color-light;
                 &:hover {
                     
-                    color: white;
-                    background-color: dimgray;
+                    color: $background-color-secondary;
+                    background-color: $background-color-main;
                 }
             }
     }

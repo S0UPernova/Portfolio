@@ -7,11 +7,11 @@
     width: 60%;
     font-size: 1.5rem;
     transition: box-shadow 500ms ease-out;
-    box-shadow: 1px 1px 1px $box-shadow-color, -0.1em .1em .1em $box-shadow-color;
+    box-shadow: $box-shadow-initial;
     &:focus {
-        box-shadow: 1px 1px 4px $box-shadow-color, -0.3em .1em .4em $box-shadow-color;
+        box-shadow: $box-shadow-transition;
     }
     &:hover {
-        box-shadow: 1px 1px 4px $box-shadow-color, -0.3em .1em .4em $box-shadow-color;
+        box-shadow: $box-shadow-transition;
     }
 }

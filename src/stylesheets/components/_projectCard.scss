@@ -10,15 +10,14 @@
     }
     
     .card {
-        border: solid black;
-        color: black;
+        border: solid $border-color;
         padding: 1em;
         flex-grow: 1;
         width: 15em;
         max-width: 30rem;
         &:hover {
-            box-shadow: 2px 2px 8px $box-shadow-color, -0.3em .2em .8em $box-shadow-color;
-            background-color:rgb(187, 187, 187);
+            box-shadow: $box-shadow-transition;
+            background-color: $background-color-secondary;
             }
         .projectName {
             text-align: center;
@@ -36,7 +35,7 @@
 
         }
         .github {
-            background-color: rgb(36, 41, 46);
+            background-color: #24292e;
             color: white;
             display: flex;
             justify-content: center;
@@ -50,14 +49,18 @@
             text-align: center;
 
             &:hover {
-                box-shadow: 1px 1px $box-shadow-color, -0.1em 0 .1em $box-shadow-color;
+                box-shadow: $box-shadow-initial;
                 transition: all 0.2s ease-in-out;
                 }
         }
         button {
             cursor: pointer;
         }
+        h2 {
+            color: $header-color;
+        }
         p{
+            color: $para-color;
             margin: 2rem 0;
         }
     }
