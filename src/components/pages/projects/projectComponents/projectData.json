@@ -13,7 +13,7 @@
         "description": "A simple crud app from The Ruby on Rails Tutorial by Michael Hartl",
         "hostedLink": "https://obscure-toy-app.herokuapp.com/",
         "githubLink": "https://github.com/S0UPernova/toy_app",
-        "techStack": ["html", "css", "ruby on rails", "simple crud"]
+        "techStack": ["html", "css", "ruby on rails", "crud"]
     },
     {
         "img": "",

@@ -1,17 +1,31 @@
-@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
 h1,
 h2,
 h3,
 h4,
 h5,
 .btn{
-    font-family: Garamond, EB Garamond, Georgia, serif;
-    letter-spacing: 1.5pt;
+		font-family: Garamond, EB Garamond, Georgia, serif;
+		letter-spacing: 1.2pt;
 }
 *{
-    font-family: Georgia, serif;
+	font-family: Georgia, serif;
 }
 p {
-    letter-spacing: .6pt;
-    line-height: 16pt;
+	letter-spacing: .6pt;
+	line-height: 16pt;
+	max-width: 80ch;
+}
+h1 {
+	font-size: 1.5rem;
+	line-height: 30pt;
+}
+
+ul {
+	margin-top: 1rem;
+	li {
+		letter-spacing: 0.6pt;
+		line-height: 16pt;
+		margin-left: 2rem;
+	} 
 }
