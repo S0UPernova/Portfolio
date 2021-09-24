@@ -71,6 +71,7 @@ class ProjectCards extends React.Component {
                                 layout 
                                 transition={motionTransition}
                                 className="hosted btn" 
+                                name="Hosted link to the project"
                                 href={project.hostedLink} 
                                 rel="noreferrer" 
                                 target="_blank">Hosted link
@@ -78,7 +79,8 @@ class ProjectCards extends React.Component {
                             {project.githubLink && <motion.a 
                                 layout
                                 transition={motionTransition}
-                                className="github btn" 
+                                className="github btn"
+                                name="Link to the project github repository"
                                 href={project.githubLink} 
                                 rel="noreferrer" 
                                 target="_blank">Github
