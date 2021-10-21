@@ -25,10 +25,9 @@ function aboutMe() {
                     <h3>Soft skills</h3>
                     <ul>
                         <li>Comfortable asking if i don't know</li>
-                        <li>Not only the ablity to lean, but a desire to do so</li>
+                        <li>Not only the ablity to lean, but a drive to do so</li>
                         <li>Happy to work with others, and learn from their experience</li>
-                        <li>Speeking with cutomers</li>
-                        <li>Been in leadership positions</li>
+                        <li>I have been in leadership positions</li>
                         <li>Self motivated</li>
                     </ul>
                 </section>

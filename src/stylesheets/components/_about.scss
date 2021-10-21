@@ -16,6 +16,7 @@
 }
 @media only screen and (min-width: 650px) {
     #skills-div {
+        // todo use astract item to reduce duplication
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
